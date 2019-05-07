@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    
+    当前登陆用户名： 
   </div>
 </template>
 
