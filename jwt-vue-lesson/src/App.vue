@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <Spin fix v-if="$store.state.isShowLoading">
+      加载中...
+    </Spin>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |

@@ -10,6 +10,31 @@ export const getUser = () => {
 };
 
 
+//登录接口
+//传入的参数是username
+export const login = (username) => {
+    return axios.request({
+        url: '/login',
+        method: 'post',
+        data: {
+            username
+        }
+    })
+};
+
+
+//校验
+export const validate = () => {
+    return axios.request({
+        methods: 'get',
+        url: '/validate'
+    })
+}
+
+
+
+
+
 //其他地方使用
 // import {getUser} from './api/user/user'
 
